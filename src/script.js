@@ -68,5 +68,3 @@ box.addEventListener(
   },
   true
 );
-
-// export { getHash };
