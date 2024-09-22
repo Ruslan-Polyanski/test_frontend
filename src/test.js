@@ -1,4 +1,4 @@
-import { getHash } from "./script";
+// import { getHash } from "./script";
 
 function test(testName, callBack) {
   try {

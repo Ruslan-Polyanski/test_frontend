@@ -1,3 +1,5 @@
+import "./style.css";
+
 const box = document.querySelector(".block__checkbox");
 const order = document.querySelector(".order");
 const collection = document.querySelectorAll(".block__checkbox_input");
@@ -29,8 +31,11 @@ function updateHash() {
   const hash = [...keys].reduce((acc, item) => {
     return acc + "#" + item;
   }, "");
-
-  history.pushState(null, null, hash);
+  if(hash === '') {
+    history.replaceState({}, '', ' ')
+  } else {
+    history.pushState(null, null, hash);
+  }
 }
 
 function renderList(data) {
@@ -64,4 +69,4 @@ box.addEventListener(
   true
 );
 
-export { getHash };
+// export { getHash };
