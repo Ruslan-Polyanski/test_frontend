@@ -1,0 +1,12 @@
+.block__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__checkbox_label:hover {
+  cursor: pointer;
+}
+
+.order {
+  margin-top: 20px;
+}
